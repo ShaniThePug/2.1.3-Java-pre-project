@@ -13,7 +13,7 @@ public class AppConfig {
     }
 
     @Bean(name="cat")
-    @Scope("prototype") //@Scope prototype- позволяет создавать новый объект при вызове бина (@Scope по умолчанию "singleton")
+    @Scope("prototype") 
     public Cat getCat() {
         Cat cat = new Cat();
         cat.setCatMeow("Meow-Meow");
